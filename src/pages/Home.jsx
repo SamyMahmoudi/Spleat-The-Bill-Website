@@ -10,6 +10,7 @@ import TheFooter from './../components/TheFooter/index';
 
 // section hero
 import HeroSection from '../components/Hero';
+import FeatureSection from '../components/Features/index';
 
 const Home = () => {
     return (
@@ -19,9 +20,9 @@ const Home = () => {
           <main>
               <HeroSection />
               <Histoire />
+              <FeatureSection/>
               <Faq />
           </main>
-
           <TheFooter />
         </>
     );
