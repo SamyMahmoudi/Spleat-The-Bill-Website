@@ -1,6 +1,7 @@
 import './../sass/pages/_home.scss';
 
 import TheHeader from './../components/TheHeader/index';
+import Histoire from './../components/Histoire';
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
 
           <main>
             <h1>Page d'accueil</h1> 
+            <Histoire />
           </main>
           
         </>
