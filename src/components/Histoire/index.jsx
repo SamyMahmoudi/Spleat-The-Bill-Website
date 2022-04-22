@@ -11,8 +11,8 @@ const Histoire = () => {
                 <div className='Histoire-Content'>
                     <Text />
                 </div>
+                <div className='Histoire-yellow-bg'></div>
             </div>
-            <div className='Histoire-yellow-bg'></div>
         </div>
     );
 };
