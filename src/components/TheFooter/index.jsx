@@ -8,17 +8,19 @@ import './../../sass/components/_TheFooter.scss';
 const index = () => {
     return(
         <footer className="TheFooter">
-            <div className="TheFooter-Content">
-                <div className="TheFooter-Wrapper">
-                    <LogoFooter />
-                    <div className="Links">
-                        <Contributeurs />
-                        <Annexe />
+            <div className="TheFooter-Parent">
+                <div className="TheFooter-Content">
+                    <div className="TheFooter-Wrapper">
+                        <LogoFooter />
+                        <div className="Links">
+                            <Contributeurs />
+                            <Annexe />
+                        </div>
                     </div>
+                    <p className="Copyrights">© 2022 | spleat the bill | tous droits réservés.</p>
                 </div>
-                <p className="Copyrights">© 2022 | spleat the bill | tous droits réservés.</p>
+                <LogoIIM />
             </div>
-            <LogoIIM />
         </footer>
     )
 }

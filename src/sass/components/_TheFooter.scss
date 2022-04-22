@@ -5,11 +5,16 @@
     padding: 0.5em 2em;
     font-family: $f--content;
     color: $c--white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     background-color: $c--darkPrimary;
+
+    &-Parent {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1140px;
+    }
 
     &-Content {
         .Copyrights {
@@ -21,7 +26,6 @@
     &-Wrapper {
         display: flex;
         flex-direction: row;
-        margin-bottom: 17px;
 
         .Links {
             display: flex;
@@ -32,6 +36,9 @@
     }
 
     &-Container {
+        h3 {
+            text-transform: uppercase;
+        }
         h3, li {
             margin-bottom: 9px;
         }
@@ -56,8 +63,11 @@
 {
     .TheFooter {
         padding: unset;
-        flex-direction: column;
-        align-items: center;
+        
+        &-Parent {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .Copyrights {
             text-align: center;
