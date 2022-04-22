@@ -1,6 +1,9 @@
 import './../sass/pages/_home.scss';
 
 import TheHeader from './../components/TheHeader/index';
+
+import Histoire from './../components/Histoire';
+
 import TheFooter from './../components/TheFooter/index';
 
 // section hero
@@ -12,7 +15,8 @@ const Home = () => {
           <TheHeader />
 
           <main>
-            <HeroSection />
+             <HeroSection />
+              <Histoire />
           </main>
 
           <TheFooter />
