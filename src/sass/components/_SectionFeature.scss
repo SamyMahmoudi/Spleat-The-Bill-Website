@@ -1,0 +1,81 @@
+@import './../helpers/variables';
+
+
+.FeatureSection 
+{
+    position: relative;
+    &-wrapper {
+        max-width: 1140px;
+        min-height: 40vh;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4em 0;
+    }
+
+    #SelectSection {
+        .FeatureSection-wrapper {
+            padding: 6em 0;
+        }
+
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background: $c--primary;
+            height: 100%;
+            width: 100%;
+            clip-path: polygon(0 0, 100% 18%, 100% 84%, 0% 100%);
+        }
+        
+    }
+    
+    &-content {
+        max-width: 600px;
+        h2 {
+            color: $c--darkPrimary;
+            font-weight: Bold;
+            font-family: $f--title;
+            font-size: 3rem;
+            margin: 0.5em 0;
+        }
+    
+        p {
+            font-family: $f--content;
+            color: #000;
+            font-weight: 200;
+        }
+    }
+
+}
+
+@media screen and (max-width : 1200px) 
+{
+    .FeatureSection 
+    {
+        &-wrapper {
+            justify-content: center;
+        }
+
+        img {
+            width: 80%;
+            margin: 2em 0;
+        }
+
+        #SelectSection {
+            .FeatureSection-wrapper {
+                padding: 8em 0;
+            }
+
+            &::before {
+                clip-path: polygon(0 0, 100% 8%, 100% 94%, 0% 100%);
+            }
+        }
+
+        
+    }
+}
