@@ -99,3 +99,12 @@
         }
     }    
 }
+
+@media screen and (max-width : 340px) {
+    .TheHeader {
+        &-Cta a {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
