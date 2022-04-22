@@ -71,3 +71,46 @@
         }
     }
 }
+
+@media screen and (max-width : 1200px) 
+{
+    .HeroSection 
+    {
+        &-Image {
+            img {
+                min-height: 300px;
+                max-height: 450px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 980px) 
+{
+    .HeroSection 
+    {
+        background-color: $c--primary;
+        &::before {
+            clip-path: initial;
+        }
+
+        &-Headlines {
+            margin: 60px auto 30px;
+            width: 95%;
+            align-items: center;
+            text-align: center;
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        &-Wrapper {
+            flex-direction: column;
+            min-height: initial;    
+        }
+
+        &-Image {
+            min-height: initial;
+        }
+    }    
+}
