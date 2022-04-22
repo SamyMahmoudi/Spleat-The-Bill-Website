@@ -2,13 +2,16 @@ import './../sass/pages/_home.scss';
 
 import TheHeader from './../components/TheHeader/index';
 
+// section hero
+import HeroSection from '../components/Hero';
+
 const Home = () => {
     return (
         <>
           <TheHeader />
 
           <main>
-            <h1>Page d'accueil</h1> 
+            <HeroSection />
           </main>
           
         </>
