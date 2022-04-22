@@ -2,7 +2,7 @@ import featureImage from './../../../images/illu_split.png';
 
 const Image = () => {
     return (
-        <img src={featureImage} alt="Image" />
+        <img src={featureImage} alt="Spleat The Bill" />
     );
 };
 
