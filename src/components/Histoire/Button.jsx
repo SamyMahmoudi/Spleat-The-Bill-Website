@@ -1,11 +1,11 @@
-const Cta = () => {
-    return (
-        <div className="TheHeader-Cta">
+const Button = () => {
+    return(
+        <div className="button">
             <a  href="https://spleat-the-bill.netlify.app/" target="_blank" title="Démonstration de la Web App - Spleat The Bill" rel="noreferrer">
-                Démonstration    
+                Voir la démonstration
             </a>
         </div>
-    );
+    )
 };
 
-export default Cta;
+export default Button;
