@@ -1,0 +1,97 @@
+@import './../helpers/variables';
+
+.TheFooter {
+
+    padding: 0.5em 2em;
+    font-family: $f--content;
+    color: $c--white;
+    background-color: $c--darkPrimary;
+
+    &-Parent {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+
+    &-Content {
+        .Copyrights {
+            padding: 0em 2em;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-Wrapper {
+        display: flex;
+        flex-direction: row;
+
+        .Links {
+            display: flex;
+            flex-direction: row;
+            padding: 2em;
+            gap: 53px;
+        }
+    }
+
+    &-Container {
+        h3 {
+            text-transform: uppercase;
+        }
+        h3, li {
+            margin-bottom: 9px;
+        }
+        a {
+            color: $c--white;
+        }
+    }
+
+    &-LogoSpleatFooter {
+        width: 180px;
+        height: 187px;
+        margin-right: 35px;
+    }
+
+    &-LogoIim {
+        width: 92px;
+        height: 92px;
+    }
+}
+
+@media screen and (max-width : 800px) 
+{
+    .TheFooter {
+        padding: unset;
+        
+        &-Parent {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Copyrights {
+            text-align: center;
+        }
+
+        &-LogoIim {
+            width: 92px;
+            height: 92px;
+            margin-bottom: 30px;
+        }
+    }    
+}
+
+@media screen and (max-width : 530px) 
+{
+    .TheFooter {
+        &-Wrapper {
+            align-items: center;
+            flex-direction: column;
+        
+            .Links {
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }    
+}

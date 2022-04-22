@@ -78,8 +78,9 @@
     {
         &-Image {
             img {
-                min-height: 300px;
+                min-height: initial;
                 max-height: 450px;
+                max-width: 300px;
             }
         }
     }
@@ -92,10 +93,11 @@
         background-color: $c--primary;
         &::before {
             clip-path: initial;
+            min-height: initial;
         }
 
         &-Headlines {
-            margin: 60px auto 30px;
+            margin: 20vh auto 30px;
             width: 95%;
             align-items: center;
             text-align: center;
@@ -106,7 +108,8 @@
 
         &-Wrapper {
             flex-direction: column;
-            min-height: initial;    
+            justify-content: space-between;
+            min-height: 90vh;
         }
 
         &-Image {
