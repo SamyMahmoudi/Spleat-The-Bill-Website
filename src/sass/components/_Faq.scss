@@ -1,0 +1,86 @@
+@import './../helpers/variables';
+
+.FaqSection{
+    padding: 2em;
+    color: $c--white;
+    font-family: $f--content;
+    background-color: $c--primary;
+
+    &-Content {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    &-ContainerHeader {
+        padding: 0em 3.5em;
+        margin-bottom: 30px;
+    }
+
+    &-Title {
+        font-size: 48px;
+        font-family: $f--title;
+    }
+
+    &-Subtitle {
+        padding: 0.5em 0em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+.FaqBlock {
+    padding: 1em;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 38px;
+    border-radius: 5px;
+
+    color: $c--black;
+    background-color: $c--white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+    summary {
+        font-size: 24px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &[open]{
+        padding: unset;
+        summary {
+            padding: 0.5em;
+            border-radius: 5px 5px 0 0;
+            color: $c--white;
+            background-color: $c--darkPrimary;
+        }
+        p {
+            padding: 1em 2em;
+            letter-spacing: 1px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width : 1000px) 
+{
+    .FaqSection {
+        &-ContainerHeader {
+            text-align: center;
+            padding: 1em 2em;
+        }
+    }
+
+    .FaqBlock {
+        summary {
+            font-size: 17px;
+        }
+        &[open]{
+            summary {
+                padding: 1em;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
