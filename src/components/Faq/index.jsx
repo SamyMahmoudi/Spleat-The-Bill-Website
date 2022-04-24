@@ -6,7 +6,7 @@ import './../../sass/components/_Faq.scss';
 const Faq = () => {
     return(
         <>
-            <section className='FaqSection'>
+            <section className='FaqSection' id='FAQ'>
                 <div className='FaqSection-Content'>
                     <div className='FaqSection-ContainerHeader'>
                         <h2 className='FaqSection-Title'>FAQ 👋🏻</h2>

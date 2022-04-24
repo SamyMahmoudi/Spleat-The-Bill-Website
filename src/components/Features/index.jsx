@@ -6,7 +6,7 @@ import './../../sass/components/_SectionFeature.scss';
 
 const index = () => {
     return (
-      <section className="FeatureSection">
+      <section className="FeatureSection" id='Fonctionnalites'>
           <QrcodeSection/>
           <SelectSection/>
           <SplitSection/>
