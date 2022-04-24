@@ -1,22 +1,20 @@
-import { NavLink } from "react-router-dom";
-
 const Navigation = () => {
     return (
         <nav className="TheHeader-Nav">
             <ul className="menu-list">
                 {/* history link */}
                 <li className="menu-list-item">
-                    <NavLink to="#Histoire" title="L'histoire de Spleat The Bill">Histoire</NavLink>
+                    <a href="#Histoire" title="L'histoire de Spleat The Bill">Histoire</a>
                 </li>
 
                 {/* features link */}
                 <li className="menu-list-item">
-                    <NavLink to="#Fonctionnalites" title="Les fonctionnalités de Spleat The Bill">Fonctionnalités</NavLink>
+                    <a href="#Fonctionnalites" title="Les fonctionnalités de Spleat The Bill">Fonctionnalités</a>
                 </li>
 
                 {/* faq link */}
                 <li className="menu-list-item">
-                    <NavLink to="#FAQ" title="Toutes vos questions sur Spleat The Bill">FAQ</NavLink>
+                    <a href="#FAQ" title="Toutes vos questions sur Spleat The Bill">FAQ</a>
                 </li>
             </ul>
         </nav>

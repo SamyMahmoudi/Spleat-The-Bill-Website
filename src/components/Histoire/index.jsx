@@ -5,7 +5,7 @@ import './../../sass/components/_Histoire.scss'
 
 const Histoire = () => {
     return (
-        <div className='Histoire'>
+        <div className='Histoire' id='Histoire'>
             <div className='Histoire-Wrapper'>
                 <Mockup />
                 <div className='Histoire-Content'>
